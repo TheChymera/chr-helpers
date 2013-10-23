@@ -23,15 +23,8 @@ Thumbs.db
 *.pyc
 *.pyo
 
-# Data traces:
-output/*
-results/*
-*/results/
-image-*.pdf
-image.pdf
-image.pmg
-image*.png
-*.backup/
+#gedit
+*~*
 
 #geany
 geany_run_script.sh
