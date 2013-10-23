@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 __author__ = 'Horea Christian'
 
 def pre_save(filename, extension=''):
