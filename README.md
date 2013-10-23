@@ -1,6 +1,6 @@
 #chr-helpers
 
-Helper functions for python scripts written by Horea Christian
+The "Christian Helpers" are helper functions doing menial operations for python scripts written by TheCyhmera (Horea Christian).
 
 DEPENDS on:
 
