@@ -33,14 +33,18 @@ def save_gen(filename, extension=''):
     pre_save(filename, extension)
     return open(filename+extension, 'a')
 
-def get_config_file():
+def get_config_file(localpath=False):
 	from os import listdir, path
 	import ConfigParser
+	if not localpath:
+		localpath = path.dirname(path.realpath(__file__)) + '/'
 	#GET CONFIG FILE
-	cfg_file_names = filter(lambda x: x.endswith('.cfg'), listdir(path.dirname(path.realpath(__file__))))
+	cfg_file_names = filter(lambda x: x.endswith('.cfg'), listdir(localpath))
 	if len(cfg_file_names) > 1:
 	    raise InputError('There are multiple *.cfg files in your experiment\'s rot directory (commonly .../faceRT/experiment) - Please delete all but one (whichever you prefer). The script will not run until then.')
 	config = ConfigParser.ConfigParser()
-	config.read(path.dirname(path.realpath(__file__))+'/'+cfg_file_names[0])
+	print cfg_file_names
+	print cfg_file_names[0]
+	config.read(localpath+cfg_file_names[0])
 	return config
 	#END GET CONFIG FILE
