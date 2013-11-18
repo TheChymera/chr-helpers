@@ -46,3 +46,12 @@ def get_config_file(localpath=False):
 	config.read(localpath+cfg_file_names[0])
 	return config
 	#END GET CONFIG FILE
+	
+def flatten_list(lis):
+    from collections import Iterable
+    for item in lis:
+	if isinstance(item, Iterable) and not isinstance(item, basestring):
+	    for x in flatten(item):
+		yield x
+	    else:
+		yield item
