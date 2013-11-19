@@ -51,7 +51,7 @@ def flatten_list(lis):
     from collections import Iterable
     for item in lis:
 	if isinstance(item, Iterable) and not isinstance(item, basestring):
-	    for x in flatten(item):
+	    for x in flatten_list(item):
 		yield x
 	    else:
 		yield item
