@@ -1,11 +1,11 @@
 #chr-helpers
 
 The "Christian Helpers" are helper functions doing menial operations for Python scripts written by TheChymera (Horea Christian).
-Available on Gentoo as [dev-python/chr-helpers](https://github.com/TheChymera/chymeric/tree/master/dev-python/chr-helpers).
+Available in [Portage](http://en.wikipedia.org/wiki/Portage_(software)) as [dev-python/chr-helpers](https://github.com/TheChymera/chymeric/tree/master/dev-python/chr-helpers).
 
 ##Dependencies
 
-* **[pandas](https://github.com/pydata/pandas)** - in [Portage](http://en.wikipedia.org/wiki/Portage_(software)) as **dev-python/pandas**
+* **[pandas](https://github.com/pydata/pandas)** - in Portage as **dev-python/pandas**
 
 ##Install via [pip](http://en.wikipedia.org/wiki/Pip_(Python))
 
