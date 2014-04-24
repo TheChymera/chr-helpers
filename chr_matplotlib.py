@@ -4,7 +4,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import AxesGrid
 
-def shiftedColorMap(cmap, start=0, midpoint=0.5, stop=1.0, 
+def remappedColorMap(cmap, start=0, midpoint=0.5, stop=1.0, 
 name='shiftedcmap'):
     '''
     Function to offset the median value of a colormap, and scale the
