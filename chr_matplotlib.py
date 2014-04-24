@@ -39,8 +39,8 @@ name='shiftedcmap'):
 
     # shifted index to match the data
     shift_index = np.hstack([
-        np.linspace(0.0, midpoint, 128, endpoint=False), 
-        np.linspace(midpoint, 1.0, 129, endpoint=True)
+        np.linspace(start, midpoint, 128, endpoint=False), 
+        np.linspace(midpoint, stop, 129, endpoint=True)
     ])
 
     for ri, si in zip(reg_index, shift_index):
