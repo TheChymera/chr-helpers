@@ -41,7 +41,11 @@ def get_config_file(localpath=False):
 	#GET CONFIG FILE
 	cfg_file_names = filter(lambda x: x.endswith('.cfg'), listdir(localpath))
 	if len(cfg_file_names) > 1:
-	    raise InputError('There are multiple *.cfg files in your experiment\'s rot directory (commonly .../faceRT/experiment) - Please delete all but one (whichever you prefer). The script will not run until then.')
+	    raise IndexError('There are multiple *.cfg files in your experiment\'s rot directory (commonly .../faceRT/experiment) - Please delete all but one (whichever you prefer). The script will not run until then.')
+	if len(cfg_file_names) == 0:
+	    localpath += '/config_examples/'
+	    cfg_file_names = ["gen.cfg"]
+	
 	config = ConfigParser.ConfigParser()
 	config.read(localpath+cfg_file_names[0])
 	return config
