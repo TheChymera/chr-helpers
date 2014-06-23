@@ -1,6 +1,6 @@
 #chr-helpers
 
-The **Chr**istian/**Ch**yme**r**a Helpers are helper functions doing menial operations for Python scripts written by TheChymera (Horea Christian).
+The Christian/Chymera Helpers are helper functions doing menial operations for Python scripts written by TheChymera (Horea Christian).
 This library is available in [Portage](http://en.wikipedia.org/wiki/Portage_(software)) as [dev-python/chr-helpers](https://github.com/TheChymera/chymeric/tree/master/dev-python/chr-helpers).
 
 ##Dependencies
