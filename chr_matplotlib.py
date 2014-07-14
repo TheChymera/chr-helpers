@@ -6,23 +6,27 @@ from mpl_toolkits.axes_grid1 import AxesGrid
 
 
 def auto_remap(data):
-    if np.min(data) >= 0:
-        raise ValueError('You do not need to rescale your cmap to center zero.')    
-    if np.max(data) > abs(np.min(data)):
-        start = (np.max(data)-abs(np.min(data)))/(2*np.max(data))
-        midpoint = abs(np.min(data))/(np.max(data)+abs(np.min(data)))
-        stop = 1.0
-        return start, midpoint, stop
-    if np.max(data) == abs(np.min(data)):
-        start = 0
-        midpoint = 0.5
-        stop = 1.0
-        return start, midpoint, stop
-    if np.max(data) < abs(np.min(data)):
-        start = 0
-        midpoint = abs(np.min(data))/(np.max(data)+abs(np.min(data)))
-        stop = (abs(np.min(data))-np.max(data))/(2*abs(np.min(data)))
-        return start, midpoint, stop
+	start=0
+	midpoint=0.5
+	stop=1.0
+	if np.nanmin(data) >= 0:
+		raise ValueError('You do not need to rescale your cmap to center zero.')    
+	if np.nanmax(data) > abs(np.nanmin(data)):
+		start = (np.nanmax(data)-abs(np.nanmin(data)))/(2*np.nanmax(data))
+		midpoint = abs(np.nanmin(data))/(np.nanmax(data)+abs(np.nanmin(data)))
+		stop = 1.0
+		#return start, midpoint, stop
+	if np.nanmax(data) == abs(np.nanmin(data)):
+		start = 0
+		midpoint = 0.5
+		stop = 1.0
+		#return start, midpoint, stop
+	if np.nanmax(data) < abs(np.nanmin(data)):
+		start = 0
+		midpoint = abs(np.nanmin(data))/(np.nanmax(data)+abs(np.nanmin(data)))
+		stop = (abs(np.nanmin(data))-np.nanmax(data))/(2*abs(np.nanmin(data)))
+	return start, midpoint, stop
+
 
 def remappedColorMap(cmap, data=False, start=0, midpoint=0.5, stop=1.0, 
 name='shiftedcmap'):
