@@ -5,7 +5,6 @@ import imp
 col = imp.load_source('remappedColorMap', './../chr_matplotlib.py')
 
 
-
 #Generate test data, with offset
 test_data = np.random.rand(40,40)-0.3
 
@@ -27,7 +26,6 @@ test_plot1=plt.imshow(test_data,cmap=remapped_cmap ,interpolation='bicubic')
 plt.title("Remapped Cmap")
 divider = make_axes_locatable(plt.gca())
 plt.colorbar(test_plot1,orientation='vertical', cax=divider.append_axes("right", size="5%", pad=0.05))
-
 
 plt.subplots_adjust(hspace=.3)
 
