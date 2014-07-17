@@ -4,10 +4,6 @@ from mpl_toolkits.axes_grid1 import make_axes_locatable
 import imp
 col = imp.load_source('remappedColorMap', './../chr_matplotlib.py')
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3b5338343eb201396b1c336e347b9521ac026375
 #Generate test data, with offset
 test_data = np.random.rand(40,40)-0.3
 
