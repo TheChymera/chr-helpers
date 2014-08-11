@@ -1,4 +1,4 @@
-__author__="Paul H, Horea Christian"
+__author__="Paul H, Horea Christian, Leonor Carcia Gutierrez"
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
