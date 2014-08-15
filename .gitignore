@@ -26,6 +26,9 @@ Thumbs.db
 #gedit
 *~*
 
+#tarballs
+*.tar.*
+
 #geany
 geany_run_script.sh
 
