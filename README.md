@@ -21,11 +21,10 @@ pip install [--user] -e your/local/repository/path
 
 ##Dependencies
 
-Mandatory:
+####Mandatory:
 * **[pandas](https://github.com/pydata/pandas)** - in Portage as **dev-python/pandas**
 
-Optional:
-
+####Optional:
 * **[Matplotlib](http://en.wikipedia.org/wiki/Matplotlib)** - in Portage as **dev-python/matplotlib**
 
 Released under the GPLv3 license.
