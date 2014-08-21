@@ -8,8 +8,7 @@ setup(
     author_email = "h.chr@mail.ru",
     url = "https://github.com/TheChymera/chr-helpers",
     download_url = "https://github.com/TheChymera/chr-helpers",
-    heywords = ["library", "matplotlib", "pandas"],
-    py_modules = ["chr_helpers"],
+    keywords = ["library", "matplotlib", "pandas"],
     classifiers = [],
     install_requires=[
 	"pandas"
