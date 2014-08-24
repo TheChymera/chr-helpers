@@ -7,7 +7,13 @@ The Chr (Christian/Chymera) Helpers are helper functions doing menial operations
 ####On [Gentoo Linux](http://en.wikipedia.org/wiki/Gentoo_linux) and Derivatives:
 
 The *chr-helpers* library is available in [Portage](http://en.wikipedia.org/wiki/Portage_(software)) as [dev-python/chr-helpers](https://github.com/TheChymera/chymeric/tree/master/dev-python/chr-helpers) from the Chymeric Overlay.
-If you are not yet using this overlay, it can be enabled with just two commands, as seen in [the README](https://github.com/TheChymera/chymeric).
+Just run the following command:
+
+```
+emerge chr-helpers
+```
+
+*If you are not yet using this overlay, it can be enabled with just two commands, as seen in [the README](https://github.com/TheChymera/chymeric).*
 
 ####On all other Operating Systems:
 
