@@ -4,7 +4,7 @@ The Chr (Christian/Chymera) Helpers are helper functions doing menial operations
 
 ##Installation
 
-####On [Gentoo Linux](http://en.wikipedia.org/wiki/Gentoo_linux) and Derivatives:
+####On [Gentoo Linux](http://en.wikipedia.org/wiki/Gentoo_linux) and [Derivatives](http://en.wikipedia.org/wiki/Category:Gentoo_Linux_derivatives):
 
 The *chr-helpers* library is available in [Portage](http://en.wikipedia.org/wiki/Portage_(software)) as [dev-python/chr-helpers](https://github.com/TheChymera/chymeric/tree/master/dev-python/chr-helpers) from the Chymeric Overlay.
 Just run the following command:
