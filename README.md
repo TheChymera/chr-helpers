@@ -33,5 +33,7 @@ pip install [--user] -e your/local/repository/path
 ####Optional:
 * **[Matplotlib](http://en.wikipedia.org/wiki/Matplotlib)** - in Portage as **dev-python/matplotlib**
 
+---
+
 Released under the GPLv3 license.
 Project led by Horea Christian (address all correspondence to: h.chr@mail.ru)
