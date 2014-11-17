@@ -1,0 +1,45 @@
+#Author: Horea Christian
+#License: GPLv3
+
+lines.linewidth: 2.5
+lines.solid_capstyle: butt
+
+legend.fancybox: true
+legend.shadow: true
+
+axes.color_cycle: f768a1, 238b45, ae017e, 66c2a4, fbb4b9, b2e2e2
+axes.facecolor: ededed
+axes.labelsize: 14
+axes.axisbelow: true
+axes.grid: true
+axes.edgecolor: ededed
+axes.linewidth: 1
+axes.titlesize: 16
+
+patch.edgecolor: cecece
+patch.linewidth: 0.5
+
+svg.fonttype: path
+
+grid.linestyle: -
+grid.linewidth: 0.5
+grid.color: cecece
+
+xtick.major.size: 0
+xtick.minor.size: 0
+ytick.major.size: 0
+ytick.minor.size: 0
+
+ytick.major.pad: 8
+xtick.major.pad: 10
+
+font.size:12.0
+
+aavefig.edgecolor: ffffff
+savefig.facecolor: ffffff
+
+figure.subplot.left: 0.08
+figure.subplot.right: 0.95
+figure.subplot.top: 0.95
+figure.subplot.bottom: 0.1
+figure.facecolor: ededed
